@@ -1,0 +1,24 @@
+@use '../variables' as v;
+@use 'sass:math';
+
+.card {
+  display: block;
+  padding: v.$base-padding;
+  border: v.$base-border-thickness solid #ddd;
+  border-radius: math.div(v.$base-border-radius, 4);
+  box-shadow: v.$base-box-shadow;
+
+  .card-title {
+    font-size: v.$font-size-lg;
+    padding-bottom: v.$base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    font-size: v.$base-font-size;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
